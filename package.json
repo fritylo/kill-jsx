@@ -1,0 +1,19 @@
+{
+  "name": "kill-jsx",
+  "version": "1.0.0",
+  "description": "Allows to use if-else, loops and other JS features in JSX.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "JSX",
+    "if",
+    "if else",
+    "loops",
+    "conditions",
+    "use if in jsx",
+    "loops in jsx",
+    "template engine jsx"
+  ],
+  "author": "fritylo",
+  "license": "MIT"
+}
