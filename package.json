@@ -12,7 +12,10 @@
     "conditions",
     "use if in jsx",
     "loops in jsx",
-    "template engine jsx"
+    "template engine jsx",
+    "react",
+    "react if else",
+    "react loops"
   ],
   "author": "fritylo",
   "license": "MIT"
