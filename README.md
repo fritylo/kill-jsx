@@ -43,7 +43,7 @@ export function Component(props) {
 ## How to use?
 
 1. Import `__` component from `'kill-jsx'` package
-2. In target place use `<__>{/*some callback here}</__>`
+2. In target place use `<__>{/*some callback here*/}</__>`
 3. Callback takes two arguments: output function and counter.
 
 ### About callback
