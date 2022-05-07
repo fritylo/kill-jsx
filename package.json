@@ -1,6 +1,6 @@
 {
   "name": "kill-jsx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allows to use if-else, loops and other JS features in JSX.",
   "main": "index.js",
   "scripts": {},
