@@ -1,6 +1,6 @@
 {
   "name": "kill-jsx",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Allows to use if-else, loops and other JS features in JSX.",
   "main": "index.js",
   "scripts": {},
@@ -18,5 +18,12 @@
     "react loops"
   ],
   "author": "fritylo",
+  "contributors": [
+    {"name": "fritylo", "email": "to.fritylo@gmail.com"}
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fritylo/kill-jsx"
+  },
   "license": "MIT"
 }
