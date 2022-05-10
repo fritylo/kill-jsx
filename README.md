@@ -40,6 +40,13 @@ export function Component(props) {
 }
 ```
 
+# Reference
+
+1. [Kill-jsx with component](#1-kill-jsx-with-component) `(^1.0.0)`
+2. [Kill-jsx with `exit` function](#2-kill-jsx-with-exit-function) `(^1.1.0)`
+
+# 1. Kill-jsx with component
+
 ## How to use?
 
 1. Import `__` component from `'kill-jsx'` package
@@ -57,3 +64,33 @@ Another argument is counter. It supplied for `for-of` loops, where you need to u
 Important thing! Don't use spaces after `<__>` and before `</__>` - it will cause errors.
 
 ![No spaces example](readme-images/no-spaces.png)
+
+# 2. Kill-jsx with `exit` function
+
+This case is kind of shorter and readable. Idea is simple - let's use function instead of component!
+
+Example:
+
+```jsx
+import { exit } from 'kill-jsx';
+
+export function Component(props) {
+   return (
+      <div>
+         {exit((o, i) => {
+            if (props.list) {
+               for (let item of props.list) {o(
+                  <Another item={item} key={`another#${i++}`} />
+               )}
+            } else {o(
+               <Fallback />
+            )}
+         })}
+      </div>
+   );
+}
+```
+
+Simply exit from JSX back to JavaScript. Any JS features are available, but best practice is to use only conditions and loops, to reach better readability.
+
+One more good feature - easy injection of `console.log` or other logger while you develop.

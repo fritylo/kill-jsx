@@ -5,8 +5,12 @@
  */
 
 export default function __(props) {
+   return exit(props.children);
+}
+
+export function exit(callback) {
    let res = [];
    let pusher = (component) => res.push(component);
-   props.children(pusher, 0);
+   callback(pusher, 0);
    return res;
 }
